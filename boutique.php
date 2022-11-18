@@ -47,7 +47,7 @@ $produits = $requete->fetchAll(PDO::FETCH_ASSOC);
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $produit['titre'] ?></h5>
                         <p class="card-text"><?php echo $produit['description'] ?></p>
-                        <span class="fs-5 badge bg-success rounded-pill">€</span>
+                        <span class="fs-5 badge bg-success rounded-pill"><?php echo $produit['prix'] ?> €</span>
                     </div>
                 </div>
 
